@@ -27,28 +27,38 @@ li {
   width: 135px;
 }
 
-li:hover {
-  color: purple;
-  font-weight: 900;
-  list-style-type: none;
-  text-shadow: 2px 2px lightpink;
-  /* text-decoration: underline; */
+.button {
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-li:hover::before {
-  content: '❤️';
+.tubers li:nth-child(odd) {
+  background-color: bisque;
 }
 
-li::before {
-  content: '🥔';
+.tubers li::before {
+  content: "🥔 ";
 }
 
-li:nth-child(2n -1) {
-  background-color: wheat;
+.tubers li:hover {
+  background-color: rgba(127, 255, 234, 0.507);
+}
+
+.tubers li:hover::before {
+  content: "🍠 ";
 }
 
 .intro::first-line {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .conclusion::first-letter {
