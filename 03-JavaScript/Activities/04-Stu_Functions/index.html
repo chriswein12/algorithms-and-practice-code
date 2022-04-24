@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtions</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var a = 2;
+    var b = 4;
+    var c = 6;
+
+    var d = "apple"
+
+    var adder = function(num1, num2, num3) {
+        return (num1 + num2 + num3);
+    };
+
+    var multiplier = function(num1, num2, num3) {
+        return num1 * num2 * num3;
+    };
+
+    var isString = function(var1, var2, var3) {
+        if ( typeof var1 === 'string' && typeof var2 === 'string' && typeof var3 === 'string') {
+            return true;
+        }
+        else {
+            return false;
+        };
+    };
+
+    var vowelChecker = function(sampleString) {
+        if (sampleString.toLowerCase().charAt(0).match(/[aeiou]/g)) {
+            return true;
+        }
+        else {
+            return false;
+        };
+    };
+
+    var addedNums = adder(a, b, c);
+    console.log(addedNums);
+
+    var multipliedNums = multiplier(a, b, c);
+    console.log(multipliedNums);
+
+    var stringCheck = isString(a, b, c);
+    console.log(stringCheck);
+
+    var vowelCheck = vowelChecker(d);
+    console.log(vowelCheck);
+
+</script>
+
+</html>
